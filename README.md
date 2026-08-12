@@ -2,6 +2,8 @@
 
 This project is a Machine Learning application designed to predict healthcare insurance premiums based on various customer demographics, lifestyle choices, and medical history.
 
+⚡ Live Link: https://healthcare-premium-prediction-4980.streamlit.app/
+
 ## Project Structure
 
 The project is organized into the following main directories and files:
