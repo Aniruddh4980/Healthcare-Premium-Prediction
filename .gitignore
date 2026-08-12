@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Virtual Environments
+venv/
+env/
+.env/
+.venv/
+
+# Streamlit
+.streamlit/
+
+# MacOS
+.DS_Store
+
+# Logs
+*.log
