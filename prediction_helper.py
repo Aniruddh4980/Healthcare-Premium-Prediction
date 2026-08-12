@@ -62,14 +62,14 @@ INSURANCE_PLAN_MAP = {
 
 MEDICAL_RISK_MAP = {
     "No Disease": 0,
-    "High blood pressure": 1,
-    "Diabetes": 1,
-    "Thyroid": 1,
-    "Heart disease": 1,
-    "Diabetes & High blood pressure": 2,
-    "Diabetes & Thyroid": 2,
-    "Diabetes & Heart disease": 2,
-    "High blood pressure & Heart disease": 2
+    "High blood pressure": 6,
+    "Diabetes": 6,
+    "Thyroid": 5,
+    "Heart disease": 8,
+    "Diabetes & High blood pressure": 12,
+    "Diabetes & Thyroid": 11,
+    "Diabetes & Heart disease": 14,
+    "High blood pressure & Heart disease": 14
 }
 
 
@@ -80,7 +80,7 @@ def calculate_normalized_risk_score(medical_history):
         0
     )
 
-    return risk / 2
+    return risk / 14
 
 
 # ==================================================
