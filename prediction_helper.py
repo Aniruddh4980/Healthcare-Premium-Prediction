@@ -6,11 +6,11 @@ import pandas as pd
 # Load artifacts
 # ==================================================
 
-model_young = joblib.load("artifacts\model_young.joblib")
-model_rest = joblib.load("artifacts\model_rest.joblib")
+model_young = joblib.load("artifacts/model_young.joblib")
+model_rest = joblib.load("artifacts/model_rest.joblib")
 
-scaler_young_data = joblib.load("artifacts\scaler_young.joblib")
-scaler_rest_data = joblib.load("artifacts\scaler_rest.joblib")
+scaler_young_data = joblib.load("artifacts/scaler_young.joblib")
+scaler_rest_data = joblib.load("artifacts/scaler_rest.joblib")
 
 scaler_young = scaler_young_data["scaler"]
 scaler_rest = scaler_rest_data["scaler"]
