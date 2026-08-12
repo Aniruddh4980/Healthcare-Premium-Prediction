@@ -6,13 +6,10 @@ This project is a Machine Learning application designed to predict healthcare in
 
 The project is organized into the following main directories and files:
 
-- **`data/`**: Contains Jupyter notebooks for exploratory data analysis (EDA), data preprocessing, and model training. It also includes the datasets (`.xlsx` files) used for training and testing.
-    - Notebooks like `ml_premium_prediction.ipynb`, `model_segmentation.ipynb`, `ML_premium_Prediction_young.ipynb`, and `ML_premium_Prediction_rest.ipynb` detail the data science workflow.
-    - Datasets like `premiums.xlsx`, `premiums_young.xlsx`, and `premiums_rest.xlsx`.
-- **`data/app/`**: Contains the Streamlit web application code.
+- **`main/`**: Contains the Streamlit web application code.
     - `main.py`: The main entry point for the Streamlit application. Provides an interactive UI for users to input their data.
     - `prediction_helper.py`: Helper functions for loading the saved models and making predictions based on user input.
-- **`data/app/artifacts/`**: Stores the serialized machine learning models and scalers.
+- **`artifacts/`**: Stores the serialized machine learning models and scalers.
     - `model_young.joblib`, `model_rest.joblib`: The trained predictive models, segmented by age groups.
     - `scaler_young.joblib`, `scaler_rest.joblib`: The scalers used to normalize input data before prediction.
 
@@ -27,7 +24,7 @@ The prediction model takes into account several features, including:
 ## Model Segmentation
 
 The project employs a segmented modeling approach to improve prediction accuracy:
-- A specific model (`model_young.joblib`) is trained and used for younger customers where features like 'Genetical Risk' might play a more significant role.
+- A specific model (`model_young.joblib`) is trained and used for younger customers from age 18 to 25 where features like 'Genetical Risk' might play a more significant role.
 - A separate model (`model_rest.joblib`) handles predictions for the rest of the age groups.
 
 ## How to Run the Application
