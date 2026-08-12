@@ -125,7 +125,7 @@ def preprocess_input(input_data):
             "smoking_status",
             "employment_status"
         ],
-        drop_first=True
+        drop_first=False
     )
 
     # --------------------------------------------------
